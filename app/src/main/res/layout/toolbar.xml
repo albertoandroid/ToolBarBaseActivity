@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/my_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorAccent"
+    android:minHeight="?attr/actionBarSize"
+    android:theme="@style/AppThemeCustomToolbar"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp"
+    app:popupTheme="@style/AppThemeCustomMenuToolbar"
+    app:titleTextColor="@android:color/white">
+
+    <!-- @style/ThemeOverlay.AppCompat.Dark.ActionBar - Pone las letras Blancas -->
+    <!-- @style/ThemeOverlay.AppCompat.Light - Pone el popup del Menú Blanco -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Nueva Toolbar"
+            android:textColor="@android:color/white" />
+
+        <ImageButton
+            android:id="@+id/toobar_image_view"
+            android:src="@drawable/ic_business_center_black_24dp"
+            android:layout_alignParentRight="true"
+            android:paddingRight="16dp"
+            android:tint="@color/colorWhiteApp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>
